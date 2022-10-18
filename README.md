@@ -1,7 +1,5 @@
 # CPP-snippets
 
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
-
 -   Code c++ faster with vs code
 -   ✨Magic ✨
 
@@ -26,7 +24,7 @@
 
 ### Create c++ template.
 
-```json
+```
  cppt
 ```
 
@@ -44,7 +42,7 @@ int main ()
 
 ### Create multiline comment:
 
-```json
+```
  cr-comment
 ```
 
@@ -56,7 +54,7 @@ Code:
 
 ### Create array:
 
-```json
+```
  cr-arr
 ```
 
@@ -68,7 +66,7 @@ Code:
 
 ### Create vector :
 
-```json
+```
  cr-vec
 ```
 
@@ -80,7 +78,7 @@ Code:
 
 ### Create function :
 
-```json
+```
  cr-func
 ```
 
@@ -94,7 +92,7 @@ return_type function_name ( parameter list ) {
 
 ### Create nested for loops :
 
-```json
+```
  cr-dbfor
 ```
 
@@ -112,7 +110,7 @@ Code:
 
 ### Create random id (uuid) :
 
-```json
+```
  cr-id
 ```
 
@@ -124,7 +122,7 @@ Code:
 
 ### Print to screen and new line :
 
-```json
+```
  cout
 ```
 
@@ -136,7 +134,7 @@ Code:
 
 ### Print to screen and space :
 
-```json
+```
  couts
 ```
 
@@ -148,7 +146,7 @@ Code:
 
 ### Print new line :
 
-```json
+```
  coutn
 ```
 
@@ -160,7 +158,7 @@ Code:
 
 ### Print array item to screen
 
-```json
+```
 cout-arr
 ```
 
@@ -175,7 +173,7 @@ Code:
 
 ### Get input from user
 
-```json
+```
     cin
 ```
 
@@ -187,7 +185,7 @@ Code:
 
 ### Get value for array from user input
 
-```json
+```
     cin-arr
 ```
 
