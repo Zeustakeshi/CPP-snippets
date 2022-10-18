@@ -44,7 +44,7 @@
     },
     "Create random id": {
         "prefix": "cr-id",
-        "body": ["$UUID"],
+        "body": ["$UUID;"],
         "description": "Create random id"
     },
     "Create nested for loops": {

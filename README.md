@@ -22,7 +22,14 @@
 
 ## Usage
 
-### Create c++ template.
+#### Setup
+
+-   Local: create folder `.vscode` in your project and then add file `cpp.code-snippets`
+-   Global:
+    -   Select User Snippets under `File` > `Preferences` (`Code` > `Preferences` on macOS)
+    -   Select the `c++` language for which the snippets should appear, or the New Global Snippets file option if they should appear for all languages. VS Code manages the creation and refreshing of the underlying snippets file(s) for you.
+
+#### Create c++ template.
 
 ```
  cppt
@@ -40,7 +47,7 @@ int main ()
 }
 ```
 
-### Create multiline comment:
+#### Create multiline comment:
 
 ```
  cr-comment
@@ -52,7 +59,7 @@ Code:
     /* your comment here */
 ```
 
-### Create array:
+#### Create array:
 
 ```
  cr-arr
@@ -64,7 +71,7 @@ Code:
     data_type arr[length];
 ```
 
-### Create vector :
+#### Create vector :
 
 ```
  cr-vec
@@ -76,7 +83,7 @@ Code:
     vector <data_type> vector_name;
 ```
 
-### Create function :
+#### Create function :
 
 ```
  cr-func
@@ -90,7 +97,7 @@ return_type function_name ( parameter list ) {
 }
 ```
 
-### Create nested for loops :
+#### Create nested for loops :
 
 ```
  cr-dbfor
@@ -108,7 +115,7 @@ Code:
     }
 ```
 
-### Create random id (uuid) :
+#### Create random id (uuid) :
 
 ```
  cr-id
@@ -120,7 +127,7 @@ Code:
     4c79f6ae-c418-4772-b8e6-0a24702551fb
 ```
 
-### Print to screen and new line :
+#### Print to screen and new line :
 
 ```
  cout
@@ -132,7 +139,7 @@ Code:
     cout  << value << endl;
 ```
 
-### Print to screen and space :
+#### Print to screen and space :
 
 ```
  couts
@@ -144,7 +151,7 @@ Code:
     cout  << value << " ";
 ```
 
-### Print new line :
+#### Print new line :
 
 ```
  coutn
@@ -156,7 +163,7 @@ Code:
     cout  << endl;
 ```
 
-### Print array item to screen
+#### Print array item to screen
 
 ```
 cout-arr
@@ -171,7 +178,7 @@ Code:
     }
 ```
 
-### Get input from user
+#### Get input from user
 
 ```
     cin
@@ -183,7 +190,7 @@ Code:
     cin >> variable_name;
 ```
 
-### Get value for array from user input
+#### Get value for array from user input
 
 ```
     cin-arr
@@ -197,4 +204,3 @@ Code:
         cin >> arr[i];
     }
 ```
-
