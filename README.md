@@ -28,6 +28,7 @@
 -   Global:
     -   Select ```User Snippets``` under `File` > `Preferences` (`Code` > `Preferences` on macOS)
     -   Select the `c++` language for which the snippets should appear, or the New Global Snippets file option if they should appear for all languages. VS Code manages the creation and refreshing of the underlying snippets file(s) for you.
+    -   Add content file `cpp.code-snippets`
 
 #### Create c++ template.
 
