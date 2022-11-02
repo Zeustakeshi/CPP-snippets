@@ -26,7 +26,7 @@
 
 -   Local: create folder `.vscode` in your project and then add file `cpp.code-snippets`
 -   Global:
-    -   Select ```User Snippets``` under `File` > `Preferences` (`Code` > `Preferences` on macOS)
+    -   Select `User Snippets` under `File` > `Preferences` (`Code` > `Preferences` on macOS)
     -   Select the `c++` language for which the snippets should appear, or the New Global Snippets file option if they should appear for all languages. VS Code manages the creation and refreshing of the underlying snippets file(s) for you.
     -   Add content file `cpp.code-snippets`
 
@@ -173,10 +173,8 @@ cout-arr
 Code:
 
 ```cpp
-    for (size_t i = 0; i < length; ++i)
-    {
-        cout << arr[i] << endl;
-    }
+    for (auto &i : arr_name) cout << &i << ' ';
+
 ```
 
 #### Get input from user
@@ -200,8 +198,5 @@ Code:
 Code:
 
 ```cpp
-    for (int i = 0; i < length; ++i)
-    {
-        cin >> arr[i];
-    }
+   for (auto &i : arr_name) cin >> i;
 ```
