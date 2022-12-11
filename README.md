@@ -9,7 +9,6 @@
 | :--------: | :---------------------------------- |
 |    cppt    | Create c++ template                 |
 | cr-comment | Create multiline comment            |
-|   cr-arr   | Create array                        |
 |   cr-vec   | Create vector                       |
 |  cr-func   | Create function                     |
 |  cr-dbfor  | Create nested for loops             |
@@ -26,9 +25,8 @@
 
 -   Local: create folder `.vscode` in your project and then add file `cpp.code-snippets`
 -   Global:
-    -   Select `User Snippets` under `File` > `Preferences` (`Code` > `Preferences` on macOS)
+    -   Select User Snippets under `File` > `Preferences` (`Code` > `Preferences` on macOS)
     -   Select the `c++` language for which the snippets should appear, or the New Global Snippets file option if they should appear for all languages. VS Code manages the creation and refreshing of the underlying snippets file(s) for you.
-    -   Add content file `cpp.code-snippets`
 
 #### Create c++ template.
 
@@ -60,98 +58,6 @@ Code:
     /* your comment here */
 ```
 
-#### Create array:
-
-```
- cr-arr
-```
-
-Code:
-
-```cpp
-    data_type arr[length];
-```
-
-#### Create vector :
-
-```
- cr-vec
-```
-
-Code:
-
-```cpp
-    vector <data_type> vector_name;
-```
-
-#### Create function :
-
-```
- cr-func
-```
-
-Code:
-
-```cpp
-return_type function_name ( parameter list ) {
-
-}
-```
-
-#### Create nested for loops :
-
-```
- cr-dbfor
-```
-
-Code:
-
-```cpp
- for (size_t i = 0; condition; ++i)
-    {
-        for (size_t j = 0; condition; ++j)
-        {
-            /* code */
-        }
-    }
-```
-
-#### Create random id (uuid) :
-
-```
- cr-id
-```
-
-Code:
-
-```cpp
-    4c79f6ae-c418-4772-b8e6-0a24702551fb
-```
-
-#### Print to screen and new line :
-
-```
- cout
-```
-
-Code:
-
-```cpp
-    cout  << value << endl;
-```
-
-#### Print to screen and space :
-
-```
- couts
-```
-
-Code:
-
-```cpp
-    cout  << value << " ";
-```
-
 #### Print new line :
 
 ```
@@ -164,39 +70,29 @@ Code:
     cout  << endl;
 ```
 
-#### Print array item to screen
+#### Binary Exponentiation
 
 ```
-cout-arr
-```
-
-Code:
-
-```cpp
-    for (auto &i : arr_name) cout << &i << ' ';
-
-```
-
-#### Get input from user
-
-```
-    cin
+ powMod
 ```
 
 Code:
 
 ```cpp
-    cin >> variable_name;
-```
-
-#### Get value for array from user input
-
-```
-    cin-arr
-```
-
-Code:
-
-```cpp
-   for (auto &i : arr_name) cin >> i;
+    ll powMod(ll a, ll b, int mod)
+    {
+        if (b == 0)
+        {
+            return 1;
+        }
+        ll x = powMod(a, b / 2, mod) % mod;
+        if (b % 2 == 0)
+        {
+            return ((x % mod) * (x % mod)) % mod;
+        }
+        else
+        {
+            return (((x % mod) * (x % mod)) % mod * (a % mod)) % mod;
+        }
+    }
 ```

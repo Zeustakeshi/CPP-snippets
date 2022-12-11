@@ -2,8 +2,12 @@
     "Template c++": {
         "prefix": "cppt",
         "body": [
-            "#include<bits/stdc++.h>",
+            "//#include<bits/stdc++.h>",
+            "#include<iostream>",
+            "#include<cmath>",
             "using namespace std;",
+            "using ll = long long;",
+            " ",
             "int main () ",
             "{",
             "  $0",
@@ -19,75 +23,49 @@
         ],
         "description": "Create Multiline Comment"
     },
-    "Create array": {
-        "prefix": "cr-arr",
-        "body": [
-            "${1|int,long long,float,double,string|} ${2:arr}[${3:length}];"
-        ],
-        "description": "Create Array"
-    },
-    "Create vector": {
-        "prefix": "cr-vec",
-        "body": [
-            "vector <${1|int,long long,float,double,string|}>${2:name};$0"
-        ],
-        "description": "Create vector"
-    },
-    "Create function": {
-        "prefix": "cr-func",
-        "body": [
-            "${1|void, int,long long,float,double,string|} $2 ($3) {",
-            "  $4",
-            "}"
-        ],
-        "description": "Create function"
-    },
-    "Create random id": {
-        "prefix": "cr-id",
-        "body": ["$UUID;"],
-        "description": "Create random id"
-    },
-    "Create nested for loops": {
-        "prefix": "cr-dbfor",
-        "body": [
-            "for (size_t ${2:i} = 0; ${3:condition}; ++${2:i})",
-            "{",
-            "    for (size_t ${5:j} = 0; ${6:condition}; ++${5:j})",
-            "    {",
-            "        ${7:/* code */}",
-            "    }",
-            "}"
-        ],
-        "description": "Create nested for loops"
-    },
     "Print new line in cpp": {
         "prefix": "coutn",
         "body": ["cout << endl;"],
         "description": "print new line in cpp"
     },
-    "Print to screen and new line ": {
-        "prefix": "cout",
-        "body": ["cout  << ${1}<< endl;"],
-        "description": "print to screen and new line"
+    "Binary Exponentiation": {
+        "prefix": "powMod",
+        "body": [
+            "ll powMod(ll a, ll b, int mod)",
+            "{",
+            "    if (b == 0)",
+            "    {",
+            "        return 1;",
+            "    }",
+            "    ll x = powMod(a, b / 2, mod) % mod;",
+            "    if (b % 2 == 0)",
+            "    {",
+            "        return ((x % mod) * (x % mod)) % mod;",
+            "    }",
+            "    else",
+            "    {",
+            "        return (((x % mod) * (x % mod)) % mod * (a % mod)) % mod;",
+            "    }",
+            "}",
+            ""
+        ],
+        "description": "Binary Exponentiation"
     },
-    "Print to screen and space ": {
-        "prefix": "couts",
-        "body": ["cout  << ${1}<<  \" \";"],
-        "description": "print to screen and new line"
-    },
-    "Print arr to screen": {
-        "prefix": "cout-arr",
-        "body": ["for (auto &${1:i} : ${2:arr_name}) cout << &${1:i} << ' ';"],
-        "description": "Print array to screen"
-    },
-    "Get input from user": {
-        "prefix": "cin",
-        "body": ["cin >> ${1:variable_name};"],
-        "description": "get input from user"
-    },
-    "Get value for array from user input": {
-        "prefix": "cin-arr",
-        "body": ["for (auto &${1:i} : ${2:arr_name}) cin >> i;"],
-        "description": "get value for array from user input"
+    "Check prime number": {
+        "prefix": "check-prime",
+        "body": [
+            "bool isPrime(ll n)",
+            "{",
+            "    for (ll i = 2; i < sqrt(n); ++i)",
+            "    {",
+            "        if (n % i == 0)",
+            "        {",
+            "            return false;",
+            "        }",
+            "    }",
+            "    return n > 1;",
+            "}"
+        ],
+        "description": "Check prime number"
     }
 }
