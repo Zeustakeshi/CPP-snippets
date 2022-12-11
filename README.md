@@ -5,19 +5,13 @@
 
 ## Features
 
-|  snippet   | Description                         |
-| :--------: | :---------------------------------- |
-|    cppt    | Create c++ template                 |
-| cr-comment | Create multiline comment            |
-|   cr-vec   | Create vector                       |
-|  cr-func   | Create function                     |
-|  cr-dbfor  | Create nested for loops             |
-|   cr-id    | Create random id (uuid)             |
-|    cout    | Print to screen and new line        |
-|   couts    | Print to screen and space           |
-|   coutn    | Print new line                      |
-|  cout-arr  | Print array item to screen          |
-|  cin-arr   | Get value for array from user input |
+|   snippet   | Description              |
+| :---------: | :----------------------- |
+|    cppt     | Create c++ template      |
+| cr-comment  | Create multiline comment |
+|    coutn    | Print new line           |
+|   powMod    | Binary Exponentiation    |
+| check-prime | Check prime number       |
 
 ## Usage
 
