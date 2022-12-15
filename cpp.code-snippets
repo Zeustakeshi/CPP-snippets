@@ -23,6 +23,19 @@
         ],
         "description": "Create Multiline Comment"
     },
+    "Create move 4 in matrix": {
+        "prefix": "cr-move4",
+        "body": ["int dx[4] = {-1, 0, 0, 1};", "int dy[4] = {0, -1, 1, 0};"],
+        "description": "Create move 4 in matrix"
+    },
+    "Create move 8 in matrix": {
+        "prefix": "cr-move8",
+        "body": [
+            "int dx[8] = {-1, -1, -1, 0, 0, 1, 1, 1};",
+            "int dy[8] = {-1, 0, 1, -1, 1, -1, 0, 1};"
+        ],
+        "description": "Create move 8 in matrix"
+    },
     "Print new line in cpp": {
         "prefix": "coutn",
         "body": ["cout << endl;"],
